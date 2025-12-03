@@ -3,23 +3,24 @@
 #include <time.h>
 using namespace std;
 
-
 bool isPrimeBase(int n)
 {
     if (n < 2) return false;
     if (n == 2) return true;
-    for (int i = 3; i < n; i++)
+    if (n % 2 == 0) return false;
+
+    for (int i = 3; i * i <= n; i += 2)
         if (n % i == 0) return false;
+
     return true;
 }
-
 std::vector<int> primesArray(int min, int max, int count)
 {
     std::vector<int> primes;
     srand(0);
     for (int i = 0; i < count; i++)
     {
-        int value = (rand()/32767.0*(max-min) + min);
+        int value = (rand() / 32767.0 * (max - min) + min);
         if (isPrimeBase(value))
             primes.push_back(value);
     }
