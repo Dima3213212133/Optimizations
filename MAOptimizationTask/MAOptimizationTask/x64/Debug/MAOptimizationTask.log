@@ -1,0 +1,3 @@
+﻿  MAOptimizationTask.cpp
+\\student\students_tmp\ИСиП2023\Алгоритмизация\Селезнев Дмитрий\Моделирование и анализ\MAOptimizationTask\MAOptimizationTask\MAOptimizationTask.cpp(23,19): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  MAOptimizationTask.vcxproj -> \\student\students_tmp\ИСиП2023\Алгоритмизация\Селезнев Дмитрий\Моделирование и анализ\MAOptimizationTask\x64\Debug\MAOptimizationTask.exe
